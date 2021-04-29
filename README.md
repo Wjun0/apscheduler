@@ -1,8 +1,8 @@
 # apscheduler
 <h2>Apscheduler 简单使用</h2><br>
-1, 如果是在其他的框架下使用定时任务，要使用BackgroundScheduler， 程序是无限循环的，就不用自己写无限循环了
-2, 如果是独立运行的定时任务，就要使用demo2 的定时任务了 BlockingScheduler.
-3，django 中可以直接在总的url中使用 BackgroundScheduler 定时任务，程序会自己运行，如demo1。
+1, 如果是在其他的框架下使用定时任务，要使用BackgroundScheduler， 程序是无限循环的，就不用自己写无限循环了.<br>
+2, 如果是独立运行的定时任务，就要使用demo2 的定时任务了 BlockingScheduler.<br>
+3，django 中可以直接在总的url中使用 BackgroundScheduler 定时任务，程序会自己运行，如demo1。<br>
 <h2>Apscheduler 组件</h2><br>
 1，triggers(触发器)： 触发器中包含调度逻辑，每个作业都由自己的触发器来决定下次运行时间。除了他们自己初始配置意外，触发器完全是无状态的。<br>
 2, job stores（作业存储器）：存储被调度的作业，默认的作业存储器只是简单地把作业保存在内存中，其他的作业存储器则是将作业保存在数据库中。当作业被保存到一个持久化的作业存储器中的时候，该作业的数据会被序列化，并在加载时被反序列化。作业存储器不能共享调度器。<br>
